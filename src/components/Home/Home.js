@@ -74,11 +74,11 @@ const Home = ({ location }) => {
         setCount(gameBoard.length);
     },[ball])
     useEffect(()=>{
-        socket.on('cheatMessage',(message)=>{
+        socket.once('cheatMessage',(message)=>{
             //setMessage(message);
             alert(message);
         });
-        socket.on('winMessage',({message,buttonToDisable})=>{
+        socket.once('winMessage',({message,buttonToDisable})=>{
             //setMessage(message);
             alert(message);
             if(buttonToDisable==='ef'){
