@@ -75,11 +75,11 @@ const Home = ({ location }) => {
     },[ball])
     useEffect(()=>{
         socket.on('cheatMessage',(message)=>{
-            setMessage(message);
+            //setMessage(message);
             alert(message);
         });
         socket.on('winMessage',({message,buttonToDisable})=>{
-            setMessage(message);
+            //setMessage(message);
             alert(message);
             if(buttonToDisable==='ef'){
                 setEfButton(true);
