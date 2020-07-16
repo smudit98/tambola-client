@@ -130,7 +130,7 @@ const Home = ({ location }) => {
             <button disabled={efButton} onClick={(event)=> callEarlyFive(event)}>Early 5!</button>
             <button disabled={trButton} onClick={(event)=> callTopRow(event)}>Top Row!</button>
             <button disabled={mrButton} onClick={(event)=> callMidRow(event)}>Mid Row!</button>
-            <button disbaled={brButton} onClick={(event)=> callBotRow(event)}>Bot Row!</button>
+            <button disabled={brButton} onClick={(event)=> callBotRow(event)}>Bot Row!</button>
         </div>
     )
 }
