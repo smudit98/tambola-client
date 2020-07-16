@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Grid from '@material-ui/core/Grid'
-import { Checkbox, Row, Col } from 'antd';
+import { Checkbox} from 'antd';
 import './Ticket.css'
 function onChange(checkedValues) {
     console.log('checked = ', checkedValues);
@@ -13,7 +13,7 @@ const Ticket = ({ ticket }) => {
                 return (
                     <Grid container justify="center" className='rowOfTicket' spacing={1}>
                         {row.map((item) => {
-                            if (item != 0) {
+                            if (item !== 0) {
                                 return (
                                     <span style={{width:'10%',height:'30px'}}>
                                     <Checkbox value={item}>{item}</Checkbox>

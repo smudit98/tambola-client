@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Ball.css'
 const Ball = ({value}) => {
     return (
